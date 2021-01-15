@@ -122,6 +122,9 @@ footer{
 		grid-template-columns: 1fr;
 		margin: 4em 0;
 	}
+	.service-secs{
+		margin: 3em 0;
+	}
 }
 
 @media(max-width: 450px){
@@ -138,6 +141,9 @@ footer{
 	.about-us{
 		grid-template-columns: 1fr;
 		margin: 4em 0;
+	}
+	.service-secs{
+		margin: 3em 0;
 	}
 }
 
