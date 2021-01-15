@@ -1,0 +1,162 @@
+
+:root{
+	--white: #FFFFFF;
+	--red: #F80000;
+	--black: #101010;
+	--yellow: #F5A00F;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	width: 100%;
+}
+/*Header*/
+header{
+	background-image: url('../IMG/pexels-camera-1.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	filter: blur(.3rem);
+	transition: all 1000ms;
+}
+header:hover{
+	filter: blur(0rem);
+}
+.header-contents{
+  	text-align: center;
+  	color: var(--white);
+  	transition: all 1000ms;
+}
+.header-contents img{
+	width: 250px;
+}
+.header-contents h1{
+	font-size: 3.5rem;
+}
+.header-contents h1 span{
+	color: #F80000;
+	font-weight: 900;
+}
+.header-contents p{
+	margin: 1.5em 0;
+	font-size: 1.3rem;
+}
+/*Services(2nd section)*/
+.services{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 5em;
+	justify-items: center;
+	background-color: var(--black);
+	color: var(--white);
+	padding: 7em;
+	transition: all 1000ms;
+}
+.service-secs{
+	text-align: center;
+}
+.service-secs i{
+	font-size: 6rem;
+}
+.service-secs h2{
+	margin: 1.1em;
+}
+/*About Us(3rd section)*/
+.about-us{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.about-us-icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.about-us-icon i{
+	font-size: 10rem;
+	color: var(--yellow);
+}
+.about-us-contents{
+	padding: 6em;
+}
+.about-us-contents p{
+	margin: 1.1em 0;
+	line-height: 1.5em;
+	font-size: 1.2rem;
+}
+/*Footer(last section)*/
+footer{
+	background-color: var(--black);
+	color: var(--white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3em;
+}
+/*Media Queries*/
+@media(max-width: 1025px){
+	header{
+		filter: blur(0rem);
+	}
+	.services{
+		grid-template-columns: 1fr;
+	}
+}
+
+@media(max-width: 770px){
+	header{
+		filter: blur(0rem);
+	}
+	.services{
+		grid-template-columns: 1fr;
+	}
+	.about-us{
+		grid-template-columns: 1fr;
+		margin: 4em 0;
+	}
+}
+
+@media(max-width: 450px){
+	header{
+		filter: blur(0rem);
+	}
+	.services{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+	.about-us{
+		grid-template-columns: 1fr;
+		margin: 4em 0;
+	}
+}
+
+@media(max-width: 330px){
+	header{
+		filter: blur(0rem);
+	}
+	.header-contents img{
+		width: 200px;
+	}
+	.services{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+	.about-us{
+		grid-template-columns: 1fr;
+		margin: 4em 0;
+	}
+}
